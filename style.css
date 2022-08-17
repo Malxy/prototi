@@ -2,13 +2,20 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
-  height: 100%;
+
   line-height: 1.8;
-  margin:0;
-  margin-top:40.5px;
+
+
   font-family: 'Karla', sans-serif;
   font-family: 'Orbitron', sans-serif;
-  text-align:justify;
+
+  width: 100%;
+  height: 100%;
+  margin-top:40.5px;
+  padding: 0px;
+  text-align: justify;
+ 
+  
 }
 
 
@@ -63,13 +70,14 @@ body, html {
 
   background:white !important;
   color:black !important;
-  font-size:2em;
+  font-size:1.5em;
 }
 .img-container {
   background:black;
   display:flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .img-container img {
   opacity:1;
@@ -82,8 +90,8 @@ body, html {
   color:white;
   font-size:4em;
 }
-.about-container{
-
+.global-container{
+  width:100 !important;
   margin-top:5%;
   color:black;
   display:flex;
@@ -95,6 +103,7 @@ body, html {
 .team-container{
   padding:0 19%;
 }
+
 @media only screen and (max-width: 992px) {
   #about{
     padding-top:50px;
@@ -102,11 +111,34 @@ body, html {
   #contact{
     padding-top:50px;
   }
+  body{
+    font-size:20px;
+    overflow-x: hidden; 
+  }
+  .global-container{
+    padding:0 10vh;
+ 
+   }
 }
 
 
-@media only screen and (max-width: 500px) {
-  .about-container{
-   padding:0 5%;
+@media only screen and (max-width: 700px) {
+  .global-container{
+    padding:0 5vh;
+    font-size:1.2em;
+   }
+ 
+  #myNavbar{
+    font-size:1.5em;
+  }
+}
+@media only screen and (max-width: 400px) {
+
+  .global-container{
+   padding:0 5vh;
+
+  }
+  #myNavbar{
+    font-size:1.2em;
   }
 }
